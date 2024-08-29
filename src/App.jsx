@@ -8,6 +8,8 @@ import Latex from 'react-latex'
 import overview from './assets/overview.png';
 import comparison from './assets/comparison.png';
 
+import Videos from './Videos';
+
 function App() {
   return (
     <div>
@@ -30,9 +32,10 @@ function App() {
         </div>
       </div>
       <div style={{ textAlign: 'left' }}>
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <img style={{ maxWidth: '100%', margin: '0 0 0.5em 0' }} src={comparison} alt='Comparison to Existing Methods' />
-          <div>Fig 1. Comparison to existing state-of-the-art NeRF-based 3D reconstruction methods for <span style={{ fontWeight: '600'}}>varying amounts of training projections</span> for two 4D phantom datasets (a) XCAT and (b) MAGIX. 
+          <div style={{ fontSize: '0.8em' }}>Fig 1. Comparison to existing state-of-the-art NeRF-based 3D reconstruction methods for <span style={{ fontWeight: '600'}}>varying amounts of training projections</span> for two 4D phantom datasets 
+           (a)<a href='https://cvit.duke.edu/resource/xcat-phantom-program/'> XCAT</a> and (b) <a href='https://www.osirix-viewer.com/resources/dicom-image-library/'> CCTA MAGIX</a>. 
             We compare <span style={{ color: '#FC8D62', fontWeight: '600' }}>Ours (full) </span> (see Fig 2. below) and 
             <span style={{ color: '#6A83BB', fontWeight: '600' }}> Ours (sparse) </span> (see the purple components in Fig 2.) to 
             <a href='https://arxiv.org/abs/2311.10959' style={{ color: '#FFD92F', fontWeight: '600' }}> SAX-NeRF</a>, 
@@ -44,7 +47,7 @@ function App() {
         </div>
         <div style={{ margin: '3rem 0'}}>
           <h2 style={{ borderBottom: '1px solid #dee2e6' }}>Abstract</h2>
-          <div>
+          <div style={{ fontSize: '0.9em' }}>
             Dynamic three-dimensional (4D) reconstruction from two-dimensional X-ray coronary angiography (CA) remains a significant clinical problem.
             Challenges include sparse-view settings, intra-scan motion, and complex vessel morphology such as structure sparsity and background occlusion.
             Existing CA reconstruction methods often require extensive user interaction or large training datasets.
@@ -62,7 +65,7 @@ function App() {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1em', margin: '3em 0'}}>
             <img src={overview} style={{ maxWidth: '75%' }} />
-            <div>Fig 2. Overview of NeRF-CA. We categorize the components of our method according to their function: 
+            <div style={{ fontSize: '0.8em' }}>Fig 2. Overview of NeRF-CA. We categorize the components of our method according to their function: 
               <span style={{ color: '#72c7ac', fontWeight: '600' }}> Dynamic reconstruction</span> and <span style={{ color: '#6a83bb', fontWeight: '600' }}>Sparse-view reconstruction</span>.
               We combine several loss functions in our work: 
               Photometric Loss <Latex>{`$\\mathcal{L}_p$`}</Latex>,
@@ -73,12 +76,18 @@ function App() {
           </div>
         </div>
         <div style={{ margin: '3rem 0'}}>
-          <h2 style={{ borderBottom: '1px solid #dee2e6' }}>More results</h2>
+          <h2 style={{ borderBottom: '1px solid #dee2e6' }}>Novel view synthesis results</h2>
+          <div>These results are obtained with <span style={{ fontWeight: '600' }}>4 training projections</span>.</div>
+          <Videos />
+
+          
+
         </div>
         <div style={{ margin: '3rem 0'}}>
           <h2 style={{ borderBottom: '1px solid #dee2e6' }}>Citation</h2>
         </div>
       </div>
+      <div style={{ fontSize: '0.8rem'}}>This site is hosted on Github Pages.</div>
     </div>
   )
 }
