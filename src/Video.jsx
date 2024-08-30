@@ -41,7 +41,7 @@ export default function Video(props) {
                     </div>}
                 </div>
             </div>
-            <div style={{ textAlign: 'center' }}>{props.title}</div>
+            <div style={{ textAlign: 'center', fontWeight: '600' }}>{props.title}</div>
         </div>
     )
 }

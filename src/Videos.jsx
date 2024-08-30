@@ -29,7 +29,7 @@ export default function Videos(props) {
                     <div style={{ textAlign: 'center', height: `${videoSize}rem` }}>
                         <img src={xcatsax} style={{ width: `${videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top right' }} />
                     </div>
-                    <div style={{ textAlign: 'center' }}>SAX-NeRF (static)</div>
+                    <div style={{ textAlign: 'center' }}><a href='https://arxiv.org/abs/2311.10959' style={{ color: 'black', fontWeight: '600' }}> SAX-NeRF</a> (static)</div>
                 </div>
                 <div>
                     <div style={{ textAlign: 'center', height: `${videoSize}rem` }}>
@@ -37,7 +37,7 @@ export default function Videos(props) {
                             <source src={xcatgt} type="video/mp4"/>
                         </video>
                     </div>
-                    <div style={{ textAlign: 'center' }}>Ground truth</div>
+                    <div style={{ textAlign: 'center', fontWeight: '600' }}>Ground truth</div>
                 </div>
             </div>
             <div style={{ margin: '1rem 0', display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '5rem' }}>
@@ -54,7 +54,7 @@ export default function Videos(props) {
                     <div style={{ textAlign: 'center', height: `${videoSize}rem` }}>
                         <img src={magixsax} style={{ width: `${videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top right' }} />
                     </div>
-                    <div style={{ textAlign: 'center' }}>SAX-NeRF (static)</div>
+                    <div style={{ textAlign: 'center' }}><a href='https://arxiv.org/abs/2311.10959' style={{ color: 'black', fontWeight: '600' }}> SAX-NeRF</a> (static)</div>
                 </div>
                 <div>
                     <div style={{ textAlign: 'center', height: `${videoSize}rem` }}>
@@ -62,7 +62,7 @@ export default function Videos(props) {
                             <source src={magixgt} type="video/mp4"/>
                         </video>
                     </div>
-                    <div style={{ textAlign: 'center' }}>Ground truth</div>
+                    <div style={{ textAlign: 'center', fontWeight: '600' }}>Ground truth</div>
                 </div>
             </div>
         </div>
