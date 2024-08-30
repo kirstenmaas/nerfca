@@ -77,7 +77,7 @@ function App() {
         </div>
         <div style={{ margin: '3rem 0' }}>
           <h2 style={{ borderBottom: '1px solid #dee2e6' }}>Novel view synthesis results</h2>
-          <div style={{ fontSize: '0.9em' }}>These results are obtained with <span style={{ fontWeight: '600' }}>4 training projections</span>.</div>
+          <div style={{ fontSize: '0.9em' }}>These results are obtained with <span style={{ fontWeight: '600' }}>4 training projections</span>. If the videos seem out of sync, please refresh the page.</div>
           <Videos />
 
           
