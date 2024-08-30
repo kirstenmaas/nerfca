@@ -33,7 +33,7 @@ export default function Videos(props) {
                 </div>
                 <div>
                     <div style={{ textAlign: 'center', height: `${videoSize}rem` }}>
-                        <video style={{ width: `${videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top right' }} autoPlay={true} loop muted>
+                        <video style={{ width: `${videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top right' }} autoPlay loop muted playsInline>
                             <source src={xcatgt} type="video/mp4"/>
                         </video>
                     </div>
@@ -58,7 +58,7 @@ export default function Videos(props) {
                 </div>
                 <div>
                     <div style={{ textAlign: 'center', height: `${videoSize}rem` }}>
-                        <video style={{ width: `${videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top right' }} autoPlay={true} loop muted>
+                        <video style={{ width: `${videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top right' }} autoPlay loop muted playsInline>
                             <source src={magixgt} type="video/mp4"/>
                         </video>
                     </div>

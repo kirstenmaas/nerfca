@@ -20,13 +20,13 @@ export default function Video(props) {
             <div style={{ width: `${videoSize}rem`, height: `${videoSize}rem` }} onMouseMove={onMouseMove}>
                 <div style={{ position: 'relative', width: '100%', height: '100%' }}>
                     <div style={{ position: 'absolute', width: '100%', left: `${barFrac*videoSize}rem`, top: 0 }}>
-                        <video style={{ width: `${videoSize - barFrac*videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top right' }} autoPlay={true} loop muted>
+                        <video style={{ width: `${videoSize - barFrac*videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top right' }} autoPlay loop muted playsInline>
                             <source src={props.src2} type="video/mp4"/>
                         </video>
                     </div>
                     
                     <div style={{ position: 'absolute', width: '100%', left: 0, top: 0,  }}>
-                        <video style={{ width: `${barFrac*videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top left' }} autoPlay={true} loop muted>
+                        <video style={{ width: `${barFrac*videoSize}rem`, height: `${videoSize}rem`, objectFit: 'cover', objectPosition: 'top left' }} autoPlay loop muted playsInline>
                             <source src={props.src1} type="video/mp4"/>
                         </video>
                     </div>
