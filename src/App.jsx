@@ -16,18 +16,18 @@ function App() {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <h1 style={{ display: 'inline-block', margin: '0' }}>NeRF-CA</h1><br/>
         <span style={{ fontSize: '1.75em' }}>Dynamic reconstruction of X-ray Coronary Angiography <br/> with extremely sparse-views</span>
-        <div style={{ display: 'flex', fontSize: '1.1em', maxWidth: '60%', gap: '3rem', justifyContent: 'space-between', margin: '2em 0 0 0' }}>
+        <div className='authorcontainer'>
           <div><a href='https://kirstenmaas.github.io/'>Kirsten Maas</a><sup>1</sup></div>
           <div><a href='https://www.dannyruijters.nl/'>Danny Ruijters</a><sup>1, 2</sup></div>
           <div><a href='https://www.tue.nl/en/research/researchers/anna-vilanova/'>Anna Vilanova</a><sup>1</sup></div>
           <div><a href='https://nicola17.github.io/'>Nicola Pezzotti</a><sup>1, 2</sup></div>
         </div>
-        <div style={{ display: 'flex', gap: '2vw', margin: '0.5rem 0' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2vw', margin: '1em 0' }}>
           <div><sup>1</sup>Eindhoven University of Technology</div>
           <div><sup>2</sup>Philips Healthcare</div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '2vw', margin: '2rem 0 3rem 0' }}>
-          <a className='nocolor' href=''><FaFile size='2em'/> Paper</a>
+          <a className='nocolor' href='https://arxiv.org/abs/2408.16355'><FaFile size='2em'/> Paper</a>
           <a className='nocolor' href='https://github.com/kirstenmaas/NeRF-CA'><FaGithub size='2em'/> Code</a>
         </div>
       </div>
@@ -75,9 +75,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{ margin: '3rem 0'}}>
+        <div style={{ margin: '3rem 0' }}>
           <h2 style={{ borderBottom: '1px solid #dee2e6' }}>Novel view synthesis results</h2>
-          <div>These results are obtained with <span style={{ fontWeight: '600' }}>4 training projections</span>.</div>
+          <div style={{ fontSize: '0.9em' }}>These results are obtained with <span style={{ fontWeight: '600' }}>4 training projections</span>.</div>
           <Videos />
 
           
@@ -85,6 +85,15 @@ function App() {
         </div>
         <div style={{ margin: '3rem 0'}}>
           <h2 style={{ borderBottom: '1px solid #dee2e6' }}>Citation</h2>
+          <div style={{ margin: '0 0 1em 0', fontSize: '0.9em' }}>If you want to cite our work, please use:</div>
+          <code>
+            <div>{"@article{maas2024nerfca,"}</div>
+            <div style={{ margin: '0 0 0 1em'}}> {"title={NeRF-CA: Dynamic Reconstruction of X-ray Coronary Angiography with Extremely Sparse-views},"}</div>
+            <div style={{ margin: '0 0 0 1em'}}>{"author={Kirsten W. H. Maas and Danny Ruijters and Anna Vilanova and Nicola Pezzotti},"}</div>
+            <div style={{ margin: '0 0 0 1em'}}>{"journal={arXiv preprint arXiv:2408.16355},"}</div>
+            <div style={{ margin: '0 0 0 1em'}}>{"year={2024},"}</div>
+            <div>{"}"}</div>
+          </code>
         </div>
       </div>
       <div style={{ fontSize: '0.8rem'}}>This site is hosted on Github Pages.</div>

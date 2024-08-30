@@ -12,3 +12,18 @@
   color: black;
   align-items: center;
 }
+
+.authorcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.1em;
+  max-width: 100%;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0 0 0;
+
+  @media (min-width:1025px) {
+    gap: 3em;
+  }
+}

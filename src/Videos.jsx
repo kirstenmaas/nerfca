@@ -9,12 +9,12 @@ import magixtemp from './assets/magix/temp.mp4';
 import magixgt from './assets/magix/gt.mp4';
 
 export default function Videos(props) {
-    const videoSize = 20;
+    const videoSize = 15;
 
     return (
-        <div>
+        <div style={{ fontSize: '0.9em' }}>
             <div style={{ margin: '1rem 0', display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '5rem'}}>
-                <div style={{ fontSize: '1.2em', width: '10rem' }}>XCAT dataset</div>
+                <div style={{ width: '8rem' }}>XCAT dataset</div>
                 <Video
                     videoSize={videoSize}
                     title='Prediction'
@@ -31,7 +31,7 @@ export default function Videos(props) {
                 </div>
             </div>
             <div style={{ margin: '1rem 0', display: 'flex', gap: '2rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '5rem' }}>
-                <div style={{ fontSize: '1.2em', width: '10rem' }}>MAGIX dataset</div>
+                <div style={{ width: '8rem' }}>MAGIX dataset</div>
                 <Video
                     videoSize={videoSize}
                     title='Prediction'
