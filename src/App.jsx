@@ -14,8 +14,12 @@ function App() {
   return (
     <div>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <h1 style={{ display: 'inline-block', margin: '0' }}>NeRF-CA</h1><br/>
-        <span style={{ fontSize: '1.75em' }}>Dynamic reconstruction of X-ray Coronary Angiography <br/> with extremely sparse-views</span>
+        <header>
+          <h1 style={{ display: 'inline-block', margin: '0' }}>
+            NeRF-CA<br/>
+            <span style={{ fontSize: '0.7em', lineHeight: '1', marginTop: '1em', fontWeight: '400' }}>Dynamic Reconstruction of X-ray Coronary Angiography <br/> with Extremely Sparse-views</span>
+          </h1>
+        </header>
         <div className='authorcontainer'>
           <div><a href='https://kirstenmaas.github.io/'>Kirsten Maas</a><sup>1</sup></div>
           <div><a href='https://www.dannyruijters.nl/'>Danny Ruijters</a><sup>1, 2</sup></div>
@@ -64,7 +68,7 @@ function App() {
             We validate our approach quantitatively and qualitatively using 4D phantom datasets and ablation studies.
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1em', margin: '3em 0'}}>
-            <img src={overview} style={{ maxWidth: '75%' }} />
+            <img src={overview} style={{ maxWidth: '100%' }} />
             <div style={{ fontSize: '0.8em' }}>Fig 2. Overview of NeRF-CA. We categorize the components of our method according to their function: 
               <span style={{ color: '#72c7ac', fontWeight: '600' }}> Dynamic reconstruction</span> and <span style={{ color: '#6a83bb', fontWeight: '600' }}>Sparse-view reconstruction</span>.
               We combine several loss functions in our work: 
