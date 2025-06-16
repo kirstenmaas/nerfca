@@ -2,6 +2,7 @@ import './App.css'
 
 import { FaGithub } from "react-icons/fa";
 import { FaFile } from "react-icons/fa";
+import { SiArxiv } from "react-icons/si";
 
 import Latex from 'react-latex'
 
@@ -17,7 +18,8 @@ function App() {
         <header>
           <h1 style={{ display: 'inline-block', margin: '0' }}>
             NeRF-CA<br/>
-            <span style={{ fontSize: '0.7em', lineHeight: '1', marginTop: '1em', fontWeight: '400' }}>Dynamic Reconstruction of X-ray Coronary Angiography <br/> with Extremely Sparse-views</span>
+            <span style={{ fontSize: '0.7em', lineHeight: '1', marginTop: '1em', fontWeight: '400' }}>Dynamic Reconstruction of X-ray Coronary Angiography <br/> with Extremely Sparse-views</span><br/>
+            <span style={{ fontSize: '0.5em', lineHeight: '1', marginTop: '1em', fontWeight: '400' }}>IEEE Transactions on Visualization and Computer Graphics</span>
           </h1>
         </header>
         <div className='authorcontainer'>
@@ -31,7 +33,8 @@ function App() {
           <div><sup>2</sup>Philips Healthcare</div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '2vw', margin: '2rem 0 3rem 0' }}>
-          <a className='nocolor' href='https://arxiv.org/abs/2408.16355'><FaFile size='2em'/> Paper</a>
+          <a className='nocolor' href='https://www.computer.org/csdl/journal/tg/5555/01/11031197/27uvy04UuoU'><FaFile size='2em'/>Paper</a>
+          <a className='nocolor' href='https://arxiv.org/abs/2408.16355'><SiArxiv size='2em'/> ArXiv</a>
           <a className='nocolor' href='https://github.com/kirstenmaas/NeRF-CA'><FaGithub size='2em'/> Code</a>
         </div>
       </div>
