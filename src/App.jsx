@@ -93,9 +93,10 @@ function App() {
           <code>
             <div>{"@article{maas2024nerfca,"}</div>
             <div style={{ margin: '0 0 0 1em'}}> {"title={NeRF-CA: Dynamic Reconstruction of X-ray Coronary Angiography with Extremely Sparse-views},"}</div>
-            <div style={{ margin: '0 0 0 1em'}}>{"author={Kirsten W. H. Maas and Danny Ruijters and Anna Vilanova and Nicola Pezzotti},"}</div>
-            <div style={{ margin: '0 0 0 1em'}}>{"journal={arXiv preprint arXiv:2408.16355},"}</div>
-            <div style={{ margin: '0 0 0 1em'}}>{"year={2024},"}</div>
+            <div style={{ margin: '0 0 0 1em'}}>{"author={Maas, Kirsten WH and Ruijters, Danny and Vilanova, Anna and Pezzotti, Nicola},"}</div>
+            <div style={{ margin: '0 0 0 1em'}}>{"journal={IEEE Transactions on Visualization and Computer Graphics},"}</div>
+            <div style={{ margin: '0 0 0 1em'}}>{"year={2025},"}</div>
+            <div style={{ margin: '0 0 0 1em'}}>{"publisher={IEEE}"}</div>
             <div>{"}"}</div>
           </code>
         </div>
