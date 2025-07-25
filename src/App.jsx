@@ -91,7 +91,7 @@ function App() {
           <h2 style={{ borderBottom: '1px solid #dee2e6' }}>Citation</h2>
           <div style={{ margin: '0 0 1em 0', fontSize: '0.9em' }}>If you want to cite our work, please use:</div>
           <code>
-            <div>{"@article{maas2024nerfca,"}</div>
+            <div>{"@article{maas2025nerfca,"}</div>
             <div style={{ margin: '0 0 0 1em'}}> {"title={NeRF-CA: Dynamic Reconstruction of X-ray Coronary Angiography with Extremely Sparse-views},"}</div>
             <div style={{ margin: '0 0 0 1em'}}>{"author={Maas, Kirsten WH and Ruijters, Danny and Vilanova, Anna and Pezzotti, Nicola},"}</div>
             <div style={{ margin: '0 0 0 1em'}}>{"journal={IEEE Transactions on Visualization and Computer Graphics},"}</div>
